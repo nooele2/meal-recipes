@@ -1,0 +1,12 @@
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
+  <div *ngFor="let category of categories" class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transform transition duration-200 ease-in-out cursor-pointer">
+    <img [src]="category.imageUrl" alt="{{ category.name }}" class="w-full h-40 object-cover">
+    <div class="p-4 text-center">
+      <h3 class="text-lg font-semibold text-gray-800 mb-2">{{ category.name }}</h3>
+      <a [routerLink]="['/category', category.id]" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm">
+        View Meals
+      </a>
+    </div>
+  </div>
+</div>
+
