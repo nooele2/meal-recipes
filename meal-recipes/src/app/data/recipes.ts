@@ -5,7 +5,7 @@ export const RECIPES: Recipe[] = [
   // --- Pregnant Woman (Category ID: 1) ---
   {
     id: 1,
-    categoryId: 1,
+    menuId: 1,
     title: 'Iron-Rich Spinach Omelette',
     description: 'High in iron and folic acid for expecting mothers.',
     imageUrl: 'assets/images/recipes/spinach-omelette.jpg',
@@ -28,7 +28,7 @@ export const RECIPES: Recipe[] = [
   },
   {
     id: 2,
-    categoryId: 1,
+    menuId: 1,
     title: 'Salmon & Asparagus with Quinoa',
     description: 'Rich in Omega-3s and folate, essential for fetal development.',
     imageUrl: 'assets/images/recipes/salmon-asparagus-quinoa.jpg',
@@ -54,7 +54,7 @@ export const RECIPES: Recipe[] = [
   // --- Halal (Category ID: 2) ---
   {
     id: 11,
-    categoryId: 2,
+    menuId: 2,
     title: 'Halal Chicken Biryani',
     description: 'Aromatic and flavorful rice dish with certified halal chicken.',
     imageUrl: 'assets/images/recipes/chicken-biryani.jpg',
@@ -79,7 +79,7 @@ export const RECIPES: Recipe[] = [
   },
   {
     id: 12,
-    categoryId: 2,
+    menuId: 2,
     title: 'Lentil Soup (Adas Shorba)',
     description: 'A comforting and nutritious halal-friendly lentil soup.',
     imageUrl: 'assets/images/recipes/lentil-soup.jpg',
@@ -105,7 +105,7 @@ export const RECIPES: Recipe[] = [
   // --- Kids (Category ID: 3) ---
   {
     id: 21,
-    categoryId: 3,
+    menuId: 3,
     title: 'Veggie Loaded Mac & Cheese',
     description: 'A hidden veggie twist on a kid-favorite, packed with nutrients.',
     imageUrl: 'assets/images/recipes/veggie-mac-cheese.jpg',
@@ -128,7 +128,7 @@ export const RECIPES: Recipe[] = [
   },
   {
     id: 22,
-    categoryId: 3,
+    menuId: 3,
     title: 'Mini Chicken & Veggie Meatballs',
     description: 'Bite-sized, healthy meatballs perfect for little hands.',
     imageUrl: 'assets/images/recipes/mini-meatballs.jpg',
@@ -155,7 +155,7 @@ export const RECIPES: Recipe[] = [
   // --- Diabetic Friendly (Category ID: 4) ---
   {
     id: 31,
-    categoryId: 4,
+    menuId: 4,
     title: 'Grilled Salmon with Roasted Broccoli',
     description: 'A low-carb, high-protein meal, excellent for blood sugar management.',
     imageUrl: 'assets/images/recipes/diabetic-salmon-broccoli.jpg',
@@ -179,7 +179,7 @@ export const RECIPES: Recipe[] = [
   },
   {
     id: 32,
-    categoryId: 4,
+    menuId: 4,
     title: 'Chicken & Vegetable Stir-Fry',
     description: 'A quick and colorful meal with lean protein and plenty of non-starchy vegetables.',
     imageUrl: 'assets/images/recipes/diabetic-stir-fry.jpg',
@@ -207,7 +207,7 @@ export const RECIPES: Recipe[] = [
   // --- Vegetarian (Category ID: 5) ---
   {
     id: 41,
-    categoryId: 5,
+    menuId: 5,
     title: 'Chickpea & Spinach Curry',
     description: 'A hearty and flavorful plant-based curry, rich in protein and fiber.',
     imageUrl: 'assets/images/recipes/chickpea-spinach-curry.jpg',
@@ -234,7 +234,7 @@ export const RECIPES: Recipe[] = [
   },
   {
     id: 42,
-    categoryId: 5,
+    menuId: 5,
     title: 'Vegetarian Lentil Shepherd\'s Pie',
     description: 'A comforting and wholesome vegetarian take on a classic comfort food.',
     imageUrl: 'assets/images/recipes/lentil-shepherds-pie.jpg',
@@ -260,7 +260,7 @@ export const RECIPES: Recipe[] = [
   // --- Asian Food (Category ID: 6) ---
   {
     id: 51,
-    categoryId: 6,
+    menuId: 6,
     title: 'Chicken Pad Thai',
     description: 'A classic Thai stir-fried noodle dish with sweet, sour, and savory flavors.',
     imageUrl: 'assets/images/recipes/chicken-pad-thai.jpg',
@@ -285,7 +285,7 @@ export const RECIPES: Recipe[] = [
   },
   {
     id: 52,
-    categoryId: 6,
+    menuId: 6,
     title: 'Japanese Miso Soup',
     description: 'A light and comforting Japanese soup, perfect as a starter.',
     imageUrl: 'assets/images/recipes/miso-soup.jpg',
@@ -310,7 +310,7 @@ export const RECIPES: Recipe[] = [
   // --- European Food (Category ID: 7) ---
   {
     id: 61,
-    categoryId: 7,
+    menuId: 7,
     title: 'Classic Spaghetti Bolognese',
     description: 'A rich and savory Italian meat sauce served over spaghetti.',
     imageUrl: 'assets/images/recipes/spaghetti-bolognese.jpg',
@@ -335,7 +335,7 @@ export const RECIPES: Recipe[] = [
   },
   {
     id: 62,
-    categoryId: 7,
+    menuId: 7,
     title: 'French Onion Soup',
     description: 'A comforting and flavorful soup with caramelized onions and cheesy croutons.',
     imageUrl: 'assets/images/recipes/french-onion-soup.jpg',
@@ -361,7 +361,7 @@ export const RECIPES: Recipe[] = [
   // --- Low Carb (Category ID: 8) ---
   {
     id: 71,
-    categoryId: 8,
+    menuId: 8,
     title: 'Keto Chicken & Avocado Salad',
     description: 'A quick and satisfying low-carb salad, high in healthy fats and protein.',
     imageUrl: 'assets/images/recipes/keto-chicken-avocado-salad.jpg',
@@ -384,7 +384,7 @@ export const RECIPES: Recipe[] = [
   },
   {
     id: 72,
-    categoryId: 8,
+    menuId: 8,
     title: 'Zucchini Noodles with Pesto & Cherry Tomatoes',
     description: 'A light and fresh low-carb alternative to pasta.',
     imageUrl: 'assets/images/recipes/zucchini-pesto-noodles.jpg',
@@ -408,7 +408,7 @@ export const RECIPES: Recipe[] = [
   // --- High Protein (Category ID: 9) ---
   {
     id: 81,
-    categoryId: 9,
+    menuId: 9,
     title: 'Lean Steak with Sweet Potato & Broccoli',
     description: 'A balanced meal packed with protein and complex carbs for muscle building.',
     imageUrl: 'assets/images/recipes/steak-sweetpotato-broccoli.jpg',
@@ -431,7 +431,7 @@ export const RECIPES: Recipe[] = [
   },
   {
     id: 82,
-    categoryId: 9,
+    menuId: 9,
     title: 'Greek Yogurt & Berry Protein Bowl',
     description: 'A quick and easy high-protein breakfast or snack.',
     imageUrl: 'assets/images/recipes/yogurt-berry-protein-bowl.jpg',
@@ -455,7 +455,7 @@ export const RECIPES: Recipe[] = [
   // --- Quick & Easy (Category ID: 10) ---
   {
     id: 91,
-    categoryId: 10,
+    menuId: 10,
     title: 'One-Pan Lemon Herb Chicken & Veggies',
     description: 'Minimal cleanup and maximum flavor in under 30 minutes.',
     imageUrl: 'assets/images/recipes/one-pan-chicken-veggies.jpg',
@@ -480,7 +480,7 @@ export const RECIPES: Recipe[] = [
   },
   {
     id: 92,
-    categoryId: 10,
+    menuId: 10,
     title: 'Avocado Toast with Egg',
     description: 'A classic quick breakfast or snack, elevated with a fried egg.',
     imageUrl: 'assets/images/recipes/avocado-toast-egg.jpg',
