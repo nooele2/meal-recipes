@@ -19,7 +19,7 @@ export class CategoryRecipesComponent {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-    const categoryId = +this.route.snapshot.paramMap.get('category')!;
-    this.filteredRecipes = this.recipes.filter(r => r.categoryId === categoryId);
+    const menuId = +this.route.snapshot.paramMap.get('menu')!;
+    this.filteredRecipes = this.recipes.filter(r => r.menuId === menuId);
   }
 }

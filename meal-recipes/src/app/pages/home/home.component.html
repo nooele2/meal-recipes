@@ -1,12 +1,58 @@
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
-  <div *ngFor="let category of categories" class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transform transition duration-200 ease-in-out cursor-pointer">
-    <img [src]="category.imageUrl" alt="{{ category.name }}" class="w-full h-40 object-cover">
-    <div class="p-4 text-center">
-      <h3 class="text-lg font-semibold text-gray-800 mb-2">{{ category.name }}</h3>
-      <a [routerLink]="['/category', category.id]" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm">
-        View Meals
-      </a>
+<div class="p-6 bg-gray-50 min-h-screen">
+  <h1 class="text-4xl font-extrabold mb-8 text-center text-indigo-700 tracking-tight">Explore Delicious Recipes</h1>
+
+  <div class="mb-10 flex flex-wrap justify-center gap-3">
+  <button
+    (click)="selectCategory('')"
+    [ngClass]="{
+      'bg-indigo-600 text-white': selectedCategory === '',
+      'bg-gray-100 text-gray-700': selectedCategory !== ''
+    }"
+    class="px-4 py-2 rounded-full text-sm font-medium shadow-sm hover:bg-indigo-500 hover:text-white transition"
+  >
+    All
+  </button>
+
+  <button
+    *ngFor="let category of categories"
+    (click)="selectCategory(category)"
+    [ngClass]="{
+      'bg-indigo-600 text-white': selectedCategory === category,
+      'bg-gray-100 text-gray-700': selectedCategory !== category
+    }"
+    class="px-4 py-2 rounded-full text-sm font-medium shadow-sm hover:bg-indigo-500 hover:text-white transition capitalize"
+  >
+    {{ category }}
+  </button>
+</div>
+
+
+
+  <div *ngIf="recipes.length === 0" class="text-center text-gray-400 text-lg mt-10 animate-pulse">
+    Loading recipes...
+  </div>
+
+  <div *ngIf="recipes.length > 0" class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <div
+      *ngFor="let recipe of recipes"
+      class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden group transform hover:-translate-y-1"
+    >
+      <img
+        [src]="recipe.image"
+        [alt]="recipe.title"
+        class="w-full h-48 object-cover group-hover:scale-105 transition duration-300"
+      />
+      <div class="p-5">
+        <h2 class="text-xl font-semibold text-gray-800 mb-2 truncate group-hover:text-indigo-600 transition">
+          {{ recipe.title }}
+        </h2>
+        <a
+          [routerLink]="['/menu', recipe.id]"
+          class="inline-block mt-3 text-sm font-medium text-white bg-indigo-500 px-4 py-2 rounded-lg shadow hover:bg-indigo-600 transition"
+        >
+          View Details
+        </a>
+      </div>
     </div>
   </div>
 </div>
-
